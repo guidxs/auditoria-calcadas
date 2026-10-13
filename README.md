@@ -2,6 +2,10 @@
 
 Aplicação web experimental para demonstrar detecção de seis classes urbanas com o modelo YOLOv8n do checkpoint integrado CP2 + CP3 da FIAP. A inferência roda no navegador com ONNX Runtime Web/WASM.
 
+## Aplicação Web
+
+Link do Auditoria de Calçadas: https://auditoria-calcadas.netlify.app/
+
 ## Objetivo e limites
 
 O projeto explora a identificação de alguns elementos em cenários urbanos pela câmera traseira de um smartphone. É experimental, pode cometer erros e não substitui vistoria humana. As classes não cobrem uma auditoria completa de acessibilidade.
