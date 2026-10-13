@@ -4,7 +4,7 @@ Aplicação web experimental para demonstrar detecção de seis classes urbanas 
 
 ## Objetivo e limites
 
-O projeto explora a identificação de alguns elementos em cenários urbanos pela câmera traseira de um smartphone. É experimental, pode cometer erros e não substitui vistoria humana. As classes não cobrem uma auditoria completa de acessibilidade: o modelo não foi treinado para detectar piso tátil, acessibilidade ou desníveis. Animal e semáforos são classes do dataset urbano, não defeitos de calçada.
+O projeto explora a identificação de alguns elementos em cenários urbanos pela câmera traseira de um smartphone. É experimental, pode cometer erros e não substitui vistoria humana. As classes não cobrem uma auditoria completa de acessibilidade.
 
 ## Tecnologias e arquitetura
 
