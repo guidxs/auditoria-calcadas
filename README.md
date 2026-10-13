@@ -1,4 +1,4 @@
-# Auditoria de Calçadas — YOLOv8n com inferência mobile
+# Auditoria de Calçadas - YOLOv8n com inferência mobile
 
 Aplicação web experimental para demonstrar detecção de seis classes urbanas com o modelo YOLOv8n do checkpoint integrado CP2 + CP3 da FIAP. A inferência roda no navegador com ONNX Runtime Web/WASM.
 
