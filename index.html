@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="Inferência experimental de objetos urbanos para auditoria de calçadas.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Auditoria de Calçadas</title>
+</head>
+<body>
+  <main id="app">
+    <header>
+      <p class="eyebrow">VISÃO COMPUTACIONAL · FIAP CP2 + CP3</p>
+      <h1>Auditoria de <span>Calçadas</span></h1>
+      <p class="subtitle">Detecção experimental de elementos urbanos diretamente no smartphone.</p>
+    </header>
+    <section class="camera-card" aria-label="Visualização da câmera">
+      <div class="viewport" id="viewport">
+        <video id="video" autoplay muted playsinline hidden></video>
+        <canvas id="overlay"></canvas>
+        <div class="placeholder"><span class="camera-icon">⌖</span><strong>Câmera pronta</strong><span>Inicie a detecção para analisar a cena.</span></div>
+        <div class="live-label"><i></i> INFERÊNCIA LOCAL</div>
+        <div class="count" id="detection-count">0 detecções</div>
+      </div>
+      <div class="camera-controls">
+        <div class="status" id="status" role="status" aria-live="polite">Preparando aplicação…</div>
+        <button id="btn-camera" disabled>Carregando modelo…</button>
+      </div>
+    </section>
+    <section class="settings">
+      <div class="section-heading"><div><p class="eyebrow">AJUSTES</p><h2>Detecção</h2></div><span id="model-state">Modelo carregando…</span></div>
+      <label class="confidence-label" for="conf-slider"><span>Confiança mínima</span><output id="conf-value">0.35</output></label>
+      <input id="conf-slider" type="range" min="10" max="90" value="35">
+      <div class="range-hints"><span>Mais detecções</span><span>Mais seletivo</span></div>
+      <div class="classes-heading"><h3>Classes do modelo</h3><span id="latency">— ms</span></div>
+      <ul class="class-list">
+        <li><i class="dot"></i> Animal <small>ID 0</small></li>
+        <li><i class="dot"></i> Semáforo <small>ID 1</small></li>
+        <li><i class="dot"></i> Contentor de resíduos <small>ID 2</small></li>
+        <li><i class="dot"></i> Buraco <small>ID 3</small></li>
+        <li><i class="dot"></i> Rachadura <small>ID 4</small></li>
+        <li><i class="dot"></i> Bueiro aberto <small>ID 5</small></li>
+      </ul>
+    </section>
+    <aside class="notice"><strong>Protótipo experimental</strong><p>O modelo pode errar e não substitui uma vistoria. As classes não cobrem toda uma auditoria de acessibilidade: não detecta piso tátil, acessibilidade ou desníveis.</p></aside>
+    <footer>Projeto acadêmico</footer>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

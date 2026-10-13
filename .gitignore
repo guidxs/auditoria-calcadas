@@ -1,0 +1,34 @@
+# Dependencies and generated build output
+node_modules/
+dist/
+coverage/
+.vite/
+
+# Secrets and local environment
+.env*
+!.env.example
+
+# Logs and operating system files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Python training environments and generated outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+runs/
+weights/
+*.pt
+
+# Keep the ONNX model required by the published application.
+*.onnx
+!public/models/auditoria_640.onnx
